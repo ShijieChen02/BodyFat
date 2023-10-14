@@ -18,13 +18,14 @@ kfold <- function(data,expr,fold){
   cat('sd_mse:',sd(mse),'\n')
 }
 
-# use abdomen as waist
-# upcoming: convenient
+# Model 1 :use abdomen as waist
+cat('\nModel 1:')
 kfold(bf,BODYFAT~log(HEIGHT- NECK)+log(ABDOMEN), 5)
 
-# if no NECK, substitude:
+# Model 2 : MOdel 1 if no NECK ( Model 2 is our final)
+cat('\nModel 2:')
 kfold(bf,BODYFAT~log(HEIGHT)+log(ABDOMEN), 5)
 
-# from top10, we choose the minimun num of predictors
-# upcoming: accurate
-kfold(bf,BODYFAT ~ DENSITY+WEIGHT+ADIPOSITY, 5)
+# we choose the first in ordered_possible models(in model_selection part)
+cat('\nModel 3:')
+kfold(bf,BODYFAT ~WEIGHT+ HEIGHT+ ADIPOSITY +ABDOMEN +WRIST, 5)
