@@ -23,4 +23,4 @@ Model Selection Part: Diagnose plot (before and after removal of outlier&influen
 Contains presentation of this project.
 
 ## shiny link
-wait.....
+https://mxjc6p-shijie-chen.shinyapps.io/body_fat/
