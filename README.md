@@ -7,10 +7,9 @@ Follow a sequence:
 2. Model Selection: code/model_selection.R (Produce all_possible.csv as a result of adjusted-r-sqaure ordered possible models whose predictors<=5)
 3. Model Diagnose: code/model_diagnose.R (Produce final_data.csv by removing outlier&influential point 39)
 4. Model Evaluation: code/model_evaluation.R
-   
-5.Shinyapp UI: ui.R
+5. Shinyapp UI: ui.R
+6. Shinyapp Sever: server.R
 
-6.Shinyapp Sever: server.R
 
 ## data
 Contains original data and data produced in "code" part.
