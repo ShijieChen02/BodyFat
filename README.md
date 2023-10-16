@@ -19,8 +19,11 @@ Contains:
 Data Cleaning Part: boxplots
 Model Selection Part: Diagnose plot (before and after removal of outlier&influential point 39)
 
-## presentation
-Contains presentation of this project.
+## summary
+Contains summary of this project.
+
+## slides
+Contains slides of this project.
 
 ## shiny link
 https://mxjc6p-shijie-chen.shinyapps.io/body_fat/
